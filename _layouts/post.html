@@ -1,0 +1,63 @@
+---
+layout: default
+disqus: true
+archive: false
+profile: false
+---
+
+<article class="post">
+  <header class="container">
+    <h1>{{ page.title }}</h1>
+    <p class="post-description">
+      {% if page.quote %}
+        {{page.quote}}
+      {% elsif page.description %}
+        {{ page.description }}
+      {% endif %}
+    </p>
+    <div class="headline">{{ page.date | date:"%B %-d, %Y" }}</div>
+  </header>
+  <section id="post-body" class="container">
+    
+    {{content}}
+  </section>
+</article>
+
+{% if post.profile %}
+    <footer id="post-meta" class="clearfix">
+        <a href="http://twitter.com/{{ site.authorTwitter }}">
+            <img class="avatar" src="/assets/images/avatar.png">
+            <div>
+                <span class="dark">{{ site.author }}</span>
+                <span>{{ site.description }}</span>
+            </div>
+        </a>
+
+        <section id="sharing">
+            {% include share.html %}
+        </section>
+    </footer>
+{% endif %}
+
+<!-- Disqus comments -->
+{% if disqus_shortname and page.disqus %}
+    <div class="archive readmore">
+        <h3>Comments</h3>
+        {% include disqus.html %}
+    </div>
+{% endif %}
+
+<!-- Archive post list -->
+{% if page.archive %}
+    <ul id="post-list" class="archive readmore">
+        <h3>Read more</h3>
+        {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url }}">{{ post.title }}<aside class="dates">{{ post.date | date:"%b %d" }}</aside></a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% include footer.html %}
+

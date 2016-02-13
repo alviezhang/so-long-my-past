@@ -1,0 +1,42 @@
+name: 别台小筑
+description: 
+meta_description: 
+
+aboutPage: true
+encoding: utf-8
+timezone: Asia/Shanghai
+
+highlighter: rouge
+
+paginate: 5
+baseurl: 
+domain_name: 'http://alvie.me'
+google_analytics: 'UA-59721977-2'
+disqus_shortname: 
+
+# Details for the RSS feed generator
+url:            'http://alvie.me'
+author:         'alvie'
+authorTwitter:  'alviezhang'
+
+permalink:       /:year/:title/
+
+exclude:
+    - Makefile
+
+gems: [jekyll-paginate]
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+
