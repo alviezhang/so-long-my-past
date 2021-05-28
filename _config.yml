@@ -1,4 +1,4 @@
-name: 张三疯
+name: So Long, My Past
 description: 凡是过往，皆为序章
 meta_description: 
 
@@ -9,15 +9,14 @@ timezone: Asia/Shanghai
 highlighter: rouge
 
 paginate: 5
-baseurl: 
-domain_name: 'http://alvie.me'
+baseurl: 'https://alviezhang.github.io/so-long-my-past'
+domain_name: 'https://alviezhang.github.io/so-long-my-past/'
 google_analytics: 'UA-59721977-2'
 disqus_shortname: 
 
 # Details for the RSS feed generator
-url:            'http://alvie.me'
-author:         'alvie'
-authorTwitter:  'alviezhang'
+url:            'https://alviezhang.github.io/so-long-my-past/'
+author:         '张三疯'
 
 permalink:       /:year/:title/
 

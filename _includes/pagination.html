@@ -2,11 +2,11 @@
     {% if paginator.previous_page %}
         <span class="prev">
             {% if paginator.previous_page == 1 %}
-                <a href="/" title="Previous Page">
+                <a href="/so-long-my-past/" title="Previous Page">
                     <span class="arrow">←</span> 上一页
                 </a>
             {% else %}
-                <a href="/page{{ paginator.previous_page }}/">
+                <a href="/so-long-my-past/page{{ paginator.previous_page }}/">
                     <span class="arrow">←</span> 上一页
                 </a>
             {% endif %}
@@ -14,7 +14,7 @@
     {% endif %}
     {% if paginator.next_page %}
         <span class="next">
-            <a href="/page{{ paginator.next_page }}/">
+            <a href="/so-long-my-past/page{{ paginator.next_page }}/">
                 下一页 <span class="arrow">→</span>
             </a>
         </span>
