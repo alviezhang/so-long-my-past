@@ -1,5 +1,4 @@
-alvie's blog
-============
+So Long, My Past
+================
 
-love nonsense
-
+What's past is prologue
