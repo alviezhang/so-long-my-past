@@ -1,4 +1,3 @@
-So Long, My Past
-================
+# So Long, My Past
 
 What's past is prologue

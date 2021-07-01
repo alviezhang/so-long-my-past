@@ -10,12 +10,13 @@ highlighter: rouge
 
 paginate: 5
 baseurl: 'https://alviezhang.github.io/so-long-my-past'
-domain_name: 'https://alviezhang.github.io/so-long-my-past/'
+domain_name: 'https://alviezhang.github.io/so-long-my-past'
 google_analytics: 'UA-59721977-2'
+smartlook: 45a1cd34b6ec92a092d334b5912ac494d52c4f7c
 disqus_shortname: 
 
 # Details for the RSS feed generator
-url:            'https://alviezhang.github.io/so-long-my-past/'
+url:            'https://alviezhang.github.io/so-long-my-past'
 author:         '张三疯'
 
 permalink:       /:year/:title/
